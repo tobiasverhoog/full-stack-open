@@ -35,24 +35,26 @@ const Statistics = (props) => {
         statistics
       </h1>
       <table>
-        <tr>
-          <StatisticsLine text="good" value={props.good} />
-        </tr>
-        <tr>
-          <StatisticsLine text="neutral" value={props.neutral} />
-        </tr>
-        <tr>
-          <StatisticsLine text="bad" value={props.bad} />
-        </tr>
-        <tr>
-          <td style={{width: '100px'}}>all</td><td>{all}</td>
-        </tr>
-        <tr>
-          <td style={{width: '100px'}}>average</td><td>{average}</td>
-        </tr>
-        <tr>
-          <td style={{width: '100px'}}>positive</td><td>{positive} %</td>
-        </tr>
+        <tbody>
+          <tr>
+            <StatisticsLine text="good" value={props.good} />
+          </tr>
+          <tr>
+            <StatisticsLine text="neutral" value={props.neutral} />
+          </tr>
+          <tr>
+            <StatisticsLine text="bad" value={props.bad} />
+          </tr>
+          <tr>
+            <td style={{width: '100px'}}>all</td><td>{all}</td>
+          </tr>
+          <tr>
+            <td style={{width: '100px'}}>average</td><td>{average}</td>
+          </tr>
+          <tr>
+            <td style={{width: '100px'}}>positive</td><td>{positive} %</td>
+          </tr>
+        </tbody>
       </table>
     </>
   )
